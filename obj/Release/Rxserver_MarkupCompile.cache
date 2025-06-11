@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Users\rxcode\source\repos\Rxserver\obj\Debug\
+C:\Users\rxcode\source\repos\Rxserver\obj\Release\
 Rxserver
 none
 false
-DEBUG;TRACE
+TRACE
 C:\Users\rxcode\source\repos\Rxserver\App.xaml
 2-1980366138
 
-7280708574
+6-1932170104
 142081978259
 MainWindow.xaml;View\panel.xaml;
 
