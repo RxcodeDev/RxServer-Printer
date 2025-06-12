@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Rxserver.View"
         mc:Ignorable="d"
-        Title="panel" Height="300" Width="600"
+        Title="panel" Height="400" Width="600"
         WindowStyle="None"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen"
@@ -168,21 +168,120 @@
                                            FontSize="8"
                                            Margin="5,0,0,0">
                                 </TextBlock>
-                            </StackPanel>                            
+                            </StackPanel>
                         </Border>
                     </StackPanel>
                     <StackPanel Grid.Column="1" Margin="40,5,40,0">
-                        <StackPanel Background="White"
-                                    Height="210"
-                                    Width="160"
-                                    >
+                        <StackPanel Background="White" Width="175">
+                            <StackPanel x:Name="TicketRoot" Width="160" Visibility="Visible">
+                                <Image Source="/Images/RaapidinLogoGray.bmp" Width="80" Height="80" HorizontalAlignment="Center"/>
+                                <!-- Fecha y hora -->
+                                <StackPanel>
+                                    <Grid VerticalAlignment="Center">
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition Width="55"/>
+                                            <ColumnDefinition/>
+                                            <ColumnDefinition/>
+                                        </Grid.ColumnDefinitions>
+                                        <TextBlock Grid.Column="0" HorizontalAlignment="Left" Text="Fecha:" FontSize="10" FontWeight="Bold"/>
+                                        <TextBlock x:Name="FechaText" Grid.Column="1" TextAlignment="Left" Text="11/06/2025" FontSize="10"/>
+                                        <TextBlock Grid.Column="2" HorizontalAlignment="Right" Text="Hora:" FontSize="10" FontWeight="Bold"/>
+                                        <TextBlock x:Name="HoraText" Grid.Column="3" HorizontalAlignment="Right" Text="13:20" FontSize="10"/>
+                                    </Grid>
+                                </StackPanel>
 
+                                <Separator/>
+
+                                <!-- Productos (único producto para ejemplo estático) -->
+                                <StackPanel>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="10"/>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition Width="40"/>
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition/>
+                                            <RowDefinition/>
+                                        </Grid.RowDefinitions>
+                                        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="10" Text="#" FontWeight="Bold"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="1" FontSize="10" Text="PRODUCTO" FontWeight="Bold" TextAlignment="Left"/>
+                                        <TextBlock Grid.Row="0" Grid.Column="2" FontSize="10" Text="PRECIO" FontWeight="Bold"/>
+
+                                        <TextBlock x:Name="ProductoCantidadText" Grid.Row="1" Grid.Column="0" FontSize="10" Text="1"/>
+                                        <TextBlock x:Name="ProductoNombreText" Grid.Row="1" Grid.Column="1" FontSize="10" TextAlignment="Left" Text="Pollo" />
+                                        <TextBlock x:Name="ProductoPrecioText" Grid.Row="1" Grid.Column="2" FontSize="10" Text="180" />
+                                    </Grid>
+                                </StackPanel>
+
+                                <Separator/>
+
+                                <!-- Total -->
+                                <Grid HorizontalAlignment="Right">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="80"/>
+                                        <ColumnDefinition Width="35"/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="1" Text="TOTAL: " FontWeight="Bold" FontSize="10"/>
+                                    <TextBlock x:Name="TotalText" Grid.Column="2" Text="245" FontSize="10"/>
+                                </Grid>
+
+                                <!-- Forma de pago -->
+                                <Grid Margin="0,5,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" Text="Forma de pago: " FontSize="10" FontWeight="Bold"/>
+                                    <TextBlock x:Name="FormaPagoText" Grid.Column="1" Grid.Row="0" FontSize="10" Text="Tarjeta"/>
+                                </Grid>
+
+                                <!-- Cliente -->
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock HorizontalAlignment="Left" Text="Cliente: " FontSize="10" FontWeight="Bold"/>
+                                    <TextBlock x:Name="ClienteText" Text="Daniel" FontSize="10"/>
+                                </StackPanel>
+
+                                <!-- Mensaje de gracias -->
+                                <StackPanel Margin="0,5,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+                                    <TextBlock Text="Gracias por tu compra: " FontSize="10" FontWeight="Bold"/>
+                                </StackPanel>
+
+                                <!-- Teléfono -->
+                                <Grid Margin="0,0,0,5" HorizontalAlignment="Center">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition/>
+                                        <ColumnDefinition/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Grid.Column="0" Text="Tel: " TextAlignment="Center" />
+                                    <TextBlock x:Name="TelefonoText" Grid.Column="1" Text="33-33-33-33-33" TextAlignment="Center"/>
+                                </Grid>
+                            </StackPanel>
                         </StackPanel>
                         <Button x:Name="printSend"
                                 Content="Imprimir"
                                 Width="160"
                                 Margin="0,10,0,0"
                                 Click="printSend_Click">
+                        </Button>
+                        <Button x:Name="previewPrintSend"
+                            Content="Preview"
+                            Width="160"
+                            Margin="0,10,0,0"
+                            Click="previewPrintSend_Click">
                         </Button>
                     </StackPanel>
                 </Grid>

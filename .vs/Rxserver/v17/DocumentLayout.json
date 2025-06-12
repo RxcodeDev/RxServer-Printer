@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\rxcode\\source\\repos\\Rxserver\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|c:\\users\\rxcode\\source\\repos\\rxserver\\view\\panel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|solutionrelative:view\\panel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|c:\\users\\rxcode\\source\\repos\\rxserver\\view\\panel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|solutionrelative:view\\panel.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|c:\\users\\rxcode\\source\\repos\\rxserver\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|C:\\Users\\rxcode\\source\\repos\\Rxserver\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|c:\\users\\rxcode\\source\\repos\\rxserver\\view\\panel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DEF6E32-4AA5-44D7-924F-1EBBFA3A444A}|Rxserver.csproj|solutionrelative:view\\panel.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,7 +30,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
+              "Title": "panel.xaml",
+              "DocumentMoniker": "C:\\Users\\rxcode\\source\\repos\\Rxserver\\View\\panel.xaml",
+              "RelativeDocumentMoniker": "View\\panel.xaml",
+              "ToolTip": "C:\\Users\\rxcode\\source\\repos\\Rxserver\\View\\panel.xaml",
+              "RelativeToolTip": "View\\panel.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-12T04:22:32.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\rxcode\\source\\repos\\Rxserver\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
@@ -42,27 +54,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "View\\panel.xaml.cs",
+              "DocumentIndex": 2,
+              "Title": "panel.xaml.cs",
               "DocumentMoniker": "C:\\Users\\rxcode\\source\\repos\\Rxserver\\View\\panel.xaml.cs",
               "RelativeDocumentMoniker": "View\\panel.xaml.cs",
               "ToolTip": "C:\\Users\\rxcode\\source\\repos\\Rxserver\\View\\panel.xaml.cs",
               "RelativeToolTip": "View\\panel.xaml.cs",
-              "ViewState": "AgIAADsAAAAAAAAAAAAuwEEAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAADwv8gAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-11T06:41:28.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "panel.xaml",
-              "DocumentMoniker": "C:\\Users\\rxcode\\source\\repos\\Rxserver\\View\\panel.xaml",
-              "RelativeDocumentMoniker": "View\\panel.xaml",
-              "ToolTip": "C:\\Users\\rxcode\\source\\repos\\Rxserver\\View\\panel.xaml",
-              "RelativeToolTip": "View\\panel.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-11T05:53:14.915Z",
               "EditorCaption": ""
             }
           ]
