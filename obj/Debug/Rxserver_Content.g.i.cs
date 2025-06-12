@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/raapidinlogogray.bmp")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("app.ico")]
 
 
